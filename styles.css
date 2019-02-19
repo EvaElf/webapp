@@ -8,6 +8,32 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+#topbar {
+    background-color: #7A030D;
+    color: white;
+    height: 5vh;
+    text-align: center;
+}
+
+#topbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#topbar ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#search i {
+    position: absolute;
+    top: 10px;
+    right: 10vw;
+}
+
 nav {
     width: 100vw;
     position: fixed;
@@ -37,4 +63,21 @@ nav ul li a {
 
 nav i {
     font-size: 30px;
+}
+
+
+.background {
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background_trans {
+    background-image: url(images/background_trans.png);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }

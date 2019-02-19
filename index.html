@@ -11,6 +11,15 @@
 </head>
 
 <body>
+    <header>
+        <div id="topbar">
+            <ul>
+                <li>logo/navn</li>
+                <li id="search"><i class="fas fa-search"></i></li>
+            </ul>
+        </div>
+    </header>
+
 	<nav>
         <ul>
             <li id="nav_forside" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-home"></i> <br />Forside</a></li>
@@ -21,22 +30,33 @@
     </nav>
 
     <main>
-        <div id="forside">
+        <div id="startside" class="background">
+            startside
+        </div>
+
+        <div id="opretbruger" class="background">
+            opret bruger
+        </div>
+
+        <div id="logind" class="background">
+            log ind
+        </div>
+        
+        <div id="forside" class="background_trans">
             forside
         </div>
 
-        <div id="madoversigt">
+        <div id="madoversigt" class="background_trans">
             madoversigt
         </div>
 
-        <div id="opskrifter">
+        <div id="opskrifter" class="background_trans">
             opskrifter
         </div>
 
-        <div id="profil">
+        <div id="profil" class="background_trans">
             profil
         </div>
-
     </main>
 </body>
 </html>
