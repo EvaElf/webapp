@@ -4,6 +4,7 @@
 
 html, body {
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -83,10 +84,7 @@ nav i {
 }
 
 
-
-
-
-
+/* ---- OPRET BRUGER ----------------------------------------------*/
 .profile-picture img {
 	width: 30vw;
 	margin: 5vh 37vw; 
@@ -114,10 +112,11 @@ input[type=text]:focus, input[type=password]:focus {
 
 button {
 	background-color: #BA0816;
-	color: white;
+    color: white;
+    display: block;
 	font-size: 16px;
 	padding: 2vh 12vw;
-	margin: 4vh 12vw;
+	margin: 4vh auto;
 	border: none;
 	border-radius: 10px;
 }
