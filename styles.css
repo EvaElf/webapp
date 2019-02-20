@@ -83,6 +83,37 @@ nav i {
     height: 100vh;
 }
 
+/* ---- STARTSIDE ----------------------------------------------*/
+.startside-logo {
+	width: 100vw;
+}
+
+.startside-logo img {
+	width: 25vw; 
+	margin: 0 auto;
+	display: block;
+}
+
+.welcome, .spring-over {
+	color: white;
+	text-align: center;
+}
+
+.welcome p {
+	font-size: 25px;
+}
+
+.spring-over p {
+	font-size: 25px;
+	text-decoration-line: underline;
+}
+
+.startside-button {
+	width: 70vw;
+	margin: 2vh auto;
+	font-size: 20px;
+}
+
 
 /* ---- OPRET BRUGER ----------------------------------------------*/
 .profile-picture img {
@@ -119,4 +150,17 @@ button {
 	margin: 4vh auto;
 	border: none;
 	border-radius: 10px;
+}
+
+.opret-profil-button {
+	width: 45vw;
+}
+
+
+/* ---- LOG IND ----------------------------------------------*/
+.logind h1 {
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding: 8vh;
 }
