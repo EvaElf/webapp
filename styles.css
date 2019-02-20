@@ -219,9 +219,10 @@ button {
 }
 
 .logoDiabetes{
-    display: block;
-    margin-left: 50vw;
-    margin-top: 10vh;
+    float: right;
+	position: absolute;
+	bottom: 12vh;
+	right: 2vw;
 }
 
 
