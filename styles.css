@@ -132,7 +132,9 @@ nav i {
 /* ---- OPRET BRUGER ----------------------------------------------*/
 .profile-picture img {
 	width: 30vw;
-	margin: 5vh 37vw;
+	display: block;
+	margin: 0 auto;
+	padding: 6vh 0 6vh 0;
 }
 
 .form {
@@ -155,6 +157,10 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
+.checkbox-text, .checkbox-text a {
+	color: white;
+}
+
 button {
 	background-color: #BA0816;
     color: white;
@@ -166,6 +172,21 @@ button {
 	border-radius: 10px;
 }
 
+.har-en-profil {
+	color: black;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	background-color: white;
+	width: 70vw;
+	margin: 5vh auto;
+	opacity: 0.8;
+	padding: 1vh;
+}
+
+.har-en-profil a {
+	color: black;
+}
 
 /* ---- FORSIDE ----------------------------------------------*/
 
