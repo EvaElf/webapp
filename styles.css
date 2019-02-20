@@ -14,6 +14,10 @@ html, body, main {
     color: white;
     height: 5vh;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #topbar ul {
@@ -263,3 +267,21 @@ button.accordion {
 } 
 
 
+/* --- PROFIL ---------------------*/
+#profil img {
+    margin-bottom: 0px;
+}
+
+#navn {
+    text-align: center;
+}
+
+#navn p {
+    display: inline-block;
+    margin: 0;
+}
+
+.noter {
+    width: 90vw;
+    margin: 0 auto;
+}
