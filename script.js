@@ -1,3 +1,29 @@
+// function accordion_menu(point) {
+//     let acc = document.getElementsByClassName('accordion');
+//     let i;
+//     let panel = document.getElementsByClassName('panel');
+
+//     for (i = 0; i < acc.length; i++) {
+//         acc[i].style.display = 'block';
+//     }
+
+//     if (point.id === 'mejeri') {
+//         panel.style.display = 'block';
+//     }
+
+//     for (i = 0; i < acc.length; i++) {
+//         acc[i].addEventListener("click", function() {
+//             let panel = this.nextElementSibling;
+//             if (panel.style.display === "none") {
+//             panel.style.display = "block";
+//             } else {
+//             panel.style.display = "none";
+//             }
+//         });
+//     }
+// }
+
+
 
 
 function showPage(page) {
@@ -61,3 +87,5 @@ function showPage(page) {
     }
 
 }
+
+
