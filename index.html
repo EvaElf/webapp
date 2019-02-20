@@ -14,7 +14,7 @@
     <header>
         <div id="topbar">
             <ul>
-                <li>logo/navn</li>
+                <li>Madkort</li>
                 <li id="search"><i class="fas fa-search"></i></li>
             </ul>
         </div>
@@ -23,7 +23,7 @@
 	<nav>
         <ul>
             <li id="nav_forside" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-home"></i> <br />Forside</a></li>
-            <li id="nav_madoversigt" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-list"></i> <br />Madoversigt</a></li>
+            <li id="nav_madoversigt" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-list"></i> <br />Fødevarer</a></li>
             <li id="nav_opskrifter" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-utensils"></i> <br />Opskrifter</a></li>
             <li id="nav_profil" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-user"></i> <br />Profil</a></li>
         </ul>
@@ -89,7 +89,12 @@
         </div>
 
         <div id="madoversigt" class="background_trans">
-            madoversigt
+            <h2>Fødevareroversigt</h2>
+
+            <button class="accordion" id="mejeri" onclick="accordion_menu(this)">Mejeri</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
         </div>
 
         <div id="opskrifter" class="background_trans">
