@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html, body, main {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -61,7 +61,7 @@ nav ul li {
     margin: 0 -2px;
 }
 
-nav ul li a { 
+nav ul li a {
     text-decoration: none;
     color: white;
 }
@@ -98,7 +98,7 @@ nav i {
 }
 
 .startside-logo img {
-	width: 25vw; 
+	width: 25vw;
 	margin: 0 auto;
 	display: block;
 }
@@ -127,7 +127,7 @@ nav i {
 /* ---- OPRET BRUGER ----------------------------------------------*/
 .profile-picture img {
 	width: 30vw;
-	margin: 5vh 37vw; 
+	margin: 5vh 37vw;
 }
 
 .form {
@@ -159,6 +159,43 @@ button {
 	margin: 4vh auto;
 	border: none;
 	border-radius: 10px;
+}
+
+
+/* ---- FORSIDE ----------------------------------------------*/
+
+
+.forsideButton{
+    width: 90vw;
+    height: 10vh;
+    margin: -2vh auto;
+    font-size: 24px;
+}
+
+.forsideButton p{
+    text-align: left;
+    margin-left: 18vw;
+    margin-top: 1vh;
+}
+
+.overlayButtonForside{
+    background-color: #7A030D;
+    max-width: 24vw;
+    height: 10vh;
+    transform: translateX(5vw) translateY(8vh);
+    border-radius: 10px 0 0 10px;
+}
+
+.overlayButtonForside i{
+    font-size: 24px;
+    color: #ffffff;
+    transform: translateX(10vw) translateY(3vh);
+}
+
+.logoDiabetes{
+    display: block;
+    margin-left: 50vw;
+    margin-top: 10vh;
 }
 
 .opret-profil-button {
