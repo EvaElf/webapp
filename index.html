@@ -23,7 +23,7 @@
 	<nav id="nav">
         <ul>
             <li id="nav_forside" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-home"></i> <br />Forside</a></li>
-            <li id="nav_madoversigt" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-list"></i> <br />Madoversigt</a></li>
+            <li id="nav_madoversigt" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-list"></i> <br />Fødevarer</a></li>
             <li id="nav_opskrifter" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-utensils"></i> <br />Opskrifter</a></li>
             <li id="nav_profil" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-user"></i> <br />Profil</a></li>
         </ul>
@@ -93,28 +93,37 @@
 				<button type="submit" class="opret-profil-button" id="spring" onClick="showPage(this)">Log ind</button>
 				<span class="opret-profil">Har du ikke en profil? <a href="#">Opret profil</a></span>
 			</div>
-			
-			
         </div>
         
         <div id="forside" class="background_trans">
-            <div class="overlayButtonForside"><i class="fas fa-list"></i></div>
-            <button class="forsideButton"><p>Fødevarer</p></button>
-            <div class="overlayButtonForside"><i class="fas fa-utensils"></i></div>
-            <button class="forsideButton"><p>Opskrifter</p></button>
-            <div class="overlayButtonForside"><i class="fas fa-user"></i></div>
-            <button class="forsideButton"><p>Profil</p></button>
+            <div class="overlayButtonForside" id="nav_mad" onClick="showPage(this)"><i class="fas fa-list"></i></div>
+            <button class="forsideButton" id="nav_mad" onClick="showPage(this)"><p>Fødevarer</p></button>
+            <div class="overlayButtonForside" id="nav_op" onClick="showPage(this)"><i class="fas fa-utensils"></i></div>
+            <button class="forsideButton" id="nav_op" onClick="showPage(this)"><p>Opskrifter</p></button>
+            <div class="overlayButtonForside" id="nav_pro" onClick="showPage(this)"><i class="fas fa-user"></i></div>
+            <button class="forsideButton" id="nav_pro" onClick="showPage(this)"><p>Profil</p></button>
             <div class="overlayButtonForside"><i class="fas fa-share-alt"></i></div>
             <button class="forsideButton"><p>Del profil</p></button>
             <img src="images/1x/DiaLogo.png" alt="Logo Diabetes Foreningen" class="logoDiabetes">
         </div>
 
         <div id="madoversigt" class="background_trans">
-            madoversigt
-        </div>
+            <h2>Fødevareroversigt</h2>
+
+            <button class="accordion" id="mejeri" onclick="accordion_menu(this)">Mejeri</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull
+            </div>
+        </div>    
 
         <div id="opskrifter" class="background_trans">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             opskrifter
+            <br />
         </div>
 
         <div id="profil" class="background_trans">

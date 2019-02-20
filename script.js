@@ -29,8 +29,8 @@
 function showPage(page) {
     // let forside = document.getElementById('forside');
     // let madoversigt = document.getElementById('madoversigt');
-    // let opskrifter = document.getElementById('opskrifter');
-    // let profil = document.getElementById('profil');
+    let opskrifter = document.getElementById('opskrifter');
+    let profil = document.getElementById('profil');
 
     let all_pages = document.getElementsByClassName('nav_item');
 
@@ -98,6 +98,18 @@ function showPage(page) {
         nav_madoversigt.style.backgroundColor = '#BA0816';
     }
 
+    if (page.id === 'nav_mad') {
+        forside.style.display = 'none';
+        madoversigt.style.display = 'block';
+        opskrifter.style.display = 'none';
+        profil.style.display = 'none';
+        startside.style.display = 'none';
+        opretbruger.style.display = 'none';
+        logind.style.display = 'none';
+
+        nav_madoversigt.style.backgroundColor = '#BA0816';
+    }
+
     if (page.id === 'nav_opskrifter') {
         forside.style.display = 'none';
         madoversigt.style.display = 'none';
@@ -110,7 +122,31 @@ function showPage(page) {
         nav_opskrifter.style.backgroundColor = '#BA0816';
     }
 
+    if (page.id === 'nav_op') {
+        forside.style.display = 'none';
+        madoversigt.style.display = 'none';
+        opskrifter.style.display = 'block';
+        profil.style.display = 'none';
+        startside.style.display = 'none';
+        opretbruger.style.display = 'none';
+        logind.style.display = 'none';
+
+        nav_opskrifter.style.backgroundColor = '#BA0816';
+    }
+
     if (page.id === 'nav_profil') {
+        forside.style.display = 'none';
+        madoversigt.style.display = 'none';
+        opskrifter.style.display = 'none';
+        profil.style.display = 'block';
+        startside.style.display = 'none';
+        opretbruger.style.display = 'none';
+        logind.style.display = 'none';
+
+        nav_profil.style.backgroundColor = '#BA0816';
+    }
+
+    if (page.id === 'nav_pro') {
         forside.style.display = 'none';
         madoversigt.style.display = 'none';
         opskrifter.style.display = 'none';
