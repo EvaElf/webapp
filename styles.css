@@ -231,11 +231,18 @@ button {
 
 
 /* --- MADOVERSIGT -------------------*/
+#madoversigt h2 {
+    margin: 0 auto;
+    padding: 2vh 0 0;
+    text-align: center;
+}
+
+
 button.accordion {
-    /* width: 90vw;
+    width: 90vw;
     background-color: gray;
     text-align: left;
-    outline: none; */
+    outline: none; 
     background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -253,6 +260,6 @@ button.accordion {
   display: none;
   background-color: white;
   overflow: hidden;
-}
+} 
 
 
