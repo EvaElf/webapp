@@ -121,8 +121,12 @@ nav i {
 }
 
 .diabeteslogo img {
-	
+	float: right;
+	position: absolute;
+	bottom: 2vh;
+	right: 2vw;
 }
+	
 
 
 /* ---- OPRET BRUGER ----------------------------------------------*/
