@@ -14,6 +14,10 @@ html, body, main {
     color: white;
     height: 5vh;
     text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 #topbar ul {
@@ -57,7 +61,7 @@ nav ul li {
     margin: 0 -2px;
 }
 
-nav ul li a { 
+nav ul li a {
     text-decoration: none;
     color: white;
 }
@@ -83,11 +87,42 @@ nav i {
     height: 100vh;
 }
 
+/* ---- STARTSIDE ----------------------------------------------*/
+.startside-logo {
+	width: 100vw;
+}
+
+.startside-logo img {
+	width: 25vw;
+	margin: 0 auto;
+	display: block;
+}
+
+.welcome, .spring-over {
+	color: white;
+	text-align: center;
+}
+
+.welcome p {
+	font-size: 25px;
+}
+
+.spring-over p {
+	font-size: 25px;
+	text-decoration-line: underline;
+}
+
+.startside-button {
+	width: 70vw;
+	margin: 2vh auto;
+	font-size: 20px;
+}
+
 
 /* ---- OPRET BRUGER ----------------------------------------------*/
 .profile-picture img {
 	width: 30vw;
-	margin: 5vh 37vw; 
+	margin: 5vh 37vw;
 }
 
 .form {
@@ -121,6 +156,7 @@ button {
 	border-radius: 10px;
 }
 
+
 /* ---- FORSIDE ----------------------------------------------*/
 
 
@@ -147,7 +183,7 @@ button {
 
 .overlayButtonForside i{
     font-size: 24px;
-    color: #ffffff; 
+    color: #ffffff;
     transform: translateX(10vw) translateY(3vh);
 }
 
@@ -155,4 +191,42 @@ button {
     display: block;
     margin-left: 50vw;
     margin-top: 10vh;
+}
+
+.opret-profil-button {
+	width: 45vw;
+}
+
+
+/* ---- LOG IND ----------------------------------------------*/
+.logind h1 {
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding: 8vh;
+}
+
+/* --- MADOVERSIGT -------------------*/
+button.accordion {
+    /* width: 90vw;
+    background-color: gray;
+    text-align: left;
+    outline: none; */
+    background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.panel {
+    padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
