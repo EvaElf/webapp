@@ -14,7 +14,7 @@
     <header>
         <div id="topbar">
             <ul>
-                <li>Madkort</li>
+                <li>logo/navn</li>
                 <li id="search"><i class="fas fa-search"></i></li>
             </ul>
         </div>
@@ -23,7 +23,7 @@
 	<nav>
         <ul>
             <li id="nav_forside" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-home"></i> <br />Forside</a></li>
-            <li id="nav_madoversigt" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-list"></i> <br />Fødevarer</a></li>
+            <li id="nav_madoversigt" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-list"></i> <br />Madoversigt</a></li>
             <li id="nav_opskrifter" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-utensils"></i> <br />Opskrifter</a></li>
             <li id="nav_profil" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-user"></i> <br />Profil</a></li>
         </ul>
@@ -73,6 +73,10 @@
         </div>
 
         <div id="logind" class="background">
+			<div class="startside-logo">
+				<img src="images/logo.svg" alt="logo">
+			</div>
+			
             <div class="logind">
 				<h1>Log ind</h1>
 			</div>
@@ -80,7 +84,9 @@
 			<div class="form">
 				<input type="text" placeholder="E-mail*" name="email" required>
 				<input type="password" placeholder="Password*" name="psw" required>
+				<span class="psw">Glemt <a href="#">password?</a></span>
 				<button type="submit" class="opret-profil-button">Log ind</button>
+				<span class="opret-profil">Har du ikke en profil? <a href="#">Opret profil</a></span>
 			</div>
         </div>
         
@@ -89,12 +95,7 @@
         </div>
 
         <div id="madoversigt" class="background_trans">
-            <h2>Fødevareroversigt</h2>
-
-            <button class="accordion" id="mejeri" onclick="accordion_menu(this)">Mejeri</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+            madoversigt
         </div>
 
         <div id="opskrifter" class="background_trans">
