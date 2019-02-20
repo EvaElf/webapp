@@ -29,8 +29,8 @@
 function showPage(page) {
     // let forside = document.getElementById('forside');
     // let madoversigt = document.getElementById('madoversigt');
-    // let opskrifter = document.getElementById('opskrifter');
-    // let profil = document.getElementById('profil');
+    let opskrifter = document.getElementById('opskrifter');
+    let profil = document.getElementById('profil');
 
     let all_pages = document.getElementsByClassName('nav_item');
 
@@ -97,6 +97,18 @@ function showPage(page) {
 
         nav_madoversigt.style.backgroundColor = '#BA0816';
     }
+
+    // if (page.id === 'nav_mad') {
+    //     forside.style.display = 'none';
+    //     madoversigt.style.display = 'block';
+    //     opskrifter.style.display = 'none';
+    //     profil.style.display = 'none';
+    //     startside.style.display = 'none';
+    //     opretbruger.style.display = 'none';
+    //     logind.style.display = 'none';
+
+    //     nav_madoversigt.style.backgroundColor = '#BA0816';
+    // }
 
     if (page.id === 'nav_opskrifter') {
         forside.style.display = 'none';
