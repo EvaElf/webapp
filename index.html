@@ -20,7 +20,7 @@
         </div>
     </header>
 
-	<nav>
+	<nav id="nav">
         <ul>
             <li id="nav_forside" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-home"></i> <br />Forside</a></li>
             <li id="nav_madoversigt" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-list"></i> <br />Madoversigt</a></li>
@@ -41,11 +41,11 @@
 			</div>
 			
 			<div class="buttons">
-				<button type="submit" class="startside-button">Opret profil</button>
-				<button type="submit" class="startside-button">Log ind</button>
+				<button type="submit" id="opret" class="startside-button" onClick="showPage(this)">Opret profil</button>
+				<button type="submit" id="log" class="startside-button" onClick="showPage(this)">Log ind</button>
 			</div>
 			
-			<div class="spring-over">
+			<div class="spring-over nav_item" id="spring" onClick="showPage(this)">
 				<p>Spring over</p>
 			</div>
         </div>
@@ -68,7 +68,7 @@
 
                 <input type="checkbox" name="acceptere betingelser">Accepter betingelser
 
-                <button type="submit" class="opret-profil-button">Opret profil</button>                           
+                <button type="submit" class="opret-profil-button" id="spring" onClick="showPage(this)">Opret profil</button>                           
             </div>
         </div>
 
@@ -85,13 +85,21 @@
 				<input type="text" placeholder="E-mail*" name="email" required>
 				<input type="password" placeholder="Password*" name="psw" required>
 				<span class="psw">Glemt <a href="#">password?</a></span>
-				<button type="submit" class="opret-profil-button">Log ind</button>
+				<button type="submit" class="opret-profil-button" id="spring" onClick="showPage(this)">Log ind</button>
 				<span class="opret-profil">Har du ikke en profil? <a href="#">Opret profil</a></span>
 			</div>
         </div>
         
         <div id="forside" class="background_trans">
-            forside
+            <div class="overlayButtonForside"><i class="fas fa-list"></i></div>
+            <button class="forsideButton"><p>Fødevarer</p></button>
+            <div class="overlayButtonForside"><i class="fas fa-utensils"></i></div>
+            <button class="forsideButton"><p>Opskrifter</p></button>
+            <div class="overlayButtonForside"><i class="fas fa-user"></i></div>
+            <button class="forsideButton"><p>Profil</p></button>
+            <div class="overlayButtonForside"><i class="fas fa-share-alt"></i></div>
+            <button class="forsideButton"><p>Del profil</p></button>
+            <img src="images/1x/DiaLogo.png" alt="Logo Diabetes Foreningen" class="logoDiabetes">
         </div>
 
         <div id="madoversigt" class="background_trans">
