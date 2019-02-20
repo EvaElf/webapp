@@ -87,6 +87,11 @@ nav i {
     height: 100vh;
 }
 
+
+#opretbruger, #logind, #forside, #madoversigt, #opskrifter, #profil, #topbar, #nav {
+    display: none;
+}
+
 /* ---- STARTSIDE ----------------------------------------------*/
 .startside-logo {
 	width: 100vw;
