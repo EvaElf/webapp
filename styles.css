@@ -120,6 +120,10 @@ nav i {
 	font-size: 20px;
 }
 
+.diabeteslogo img {
+	display: block;
+}
+
 
 /* ---- OPRET BRUGER ----------------------------------------------*/
 .profile-picture img {
@@ -195,11 +199,6 @@ button {
     margin-top: 10vh;
 }
 
-.opret-profil-button {
-	width: 45vw;
-	font-size: 20px;
-}
-
 
 /* ---- LOG IND ----------------------------------------------*/
 .logind h1 {
@@ -225,6 +224,12 @@ button {
 	color: white;
 }
 
+.opret-profil-button {
+	width: 45vw;
+	font-size: 20px;
+}
+
+
 /* --- MADOVERSIGT -------------------*/
 button.accordion {
     /* width: 90vw;
@@ -249,3 +254,5 @@ button.accordion {
   background-color: white;
   overflow: hidden;
 }
+
+
