@@ -1,13 +1,15 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web app</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<script src="script.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web app</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,38 +22,42 @@
         </div>
     </header>
 
-	<nav id="nav">
+    <nav id="nav">
         <ul>
-            <li id="nav_forside" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-home"></i> <br />Forside</a></li>
-            <li id="nav_madoversigt" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-list"></i> <br />Fødevarer</a></li>
-            <li id="nav_opskrifter" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-utensils"></i> <br />Opskrifter</a></li>
-            <li id="nav_profil" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-user"></i> <br />Profil</a></li>
+            <li id="nav_forside" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-home"></i>
+                    <br />Forside</a></li>
+            <li id="nav_madoversigt" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-list"></i>
+                    <br />Fødevarer</a></li>
+            <li id="nav_opskrifter" class="nav_item" onClick="showPage(this)"><a href="#"><i
+                        class="fas fa-utensils"></i> <br />Opskrifter</a></li>
+            <li id="nav_profil" class="nav_item" onClick="showPage(this)"><a href="#"><i class="fas fa-user"></i>
+                    <br />Profil</a></li>
         </ul>
     </nav>
 
     <main>
-        <div id="startside" class="background">	
-			<div class="startside-logo">
-				<img src="images/logo.svg" alt="logo">
-			</div>
-			
-			<div class="welcome">
-				<h1>Velkommen</h1>
-				<p>Gør din hverdag lidt lettere!</p>
-			</div>
-			
-			<div class="buttons">
-				<button type="submit" id="opret" class="startside-button" onClick="showPage(this)">Opret profil</button>
-				<button type="submit" id="log" class="startside-button" onClick="showPage(this)">Log ind</button>
-			</div>
-			
-			<div class="spring-over nav_item" id="spring" onClick="showPage(this)">
-				<p>Spring over</p>
-			</div>
-			
-			<div class="diabeteslogo">
-				<img src="images/1x/DiaLogo.png" alt="Logo Diabetes Foreningen">
-			</div>
+        <div id="startside" class="background">
+            <div class="startside-logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+
+            <div class="welcome">
+                <h1>Velkommen</h1>
+                <p>Gør din hverdag lidt lettere!</p>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" id="opret" class="startside-button" onClick="showPage(this)">Opret profil</button>
+                <button type="submit" id="log" class="startside-button" onClick="showPage(this)">Log ind</button>
+            </div>
+
+            <div class="spring-over nav_item" id="spring" onClick="showPage(this)">
+                <p>Spring over</p>
+            </div>
+
+            <div class="diabeteslogo">
+                <img src="images/1x/DiaLogo.png" alt="Logo Diabetes Foreningen">
+            </div>
         </div>
 
         <div id="opretbruger" class="background">
@@ -71,54 +77,79 @@
                 <input type="password" placeholder="Bekræft password*" name="psw-repeat" required>
 
                 <input type="checkbox" name="acceptere betingelser">
-				<span class="checkbox-text">Accepter betingelser*<a href="#">Læs mere</a></span>
+                <span class="checkbox-text">Accepter betingelser*<a href="#">Læs mere</a></span>
 
-                <button type="submit" class="opret-profil-button" id="spring" onClick="showPage(this)">Opret profil</button>                           
+                <button type="submit" class="opret-profil-button spring" id="spring" onClick="showPage(this)">Opret
+                    profil</button>
             </div>
-			
-			<div class="har-en-profil">
-				<span>Har du allerede en profil?<a href="#">Log ind</a></span>
-			</div>
+
+            <div class="har-en-profil">
+                <span>Har du allerede en profil? <a href="#">Log ind</a></span>
+            </div>
         </div>
 
         <div id="logind" class="background">
-			<div class="startside-logo">
-				<img src="images/logo.svg" alt="logo">
-			</div>
-			
+            <div class="startside-logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+
             <div class="logind">
-				<h1>Log ind</h1>
-			</div>
-			
-			<div class="form">
-				<input type="text" placeholder="E-mail*" name="email" required>
-				<input type="password" placeholder="Password*" name="psw" required>
-				<span class="psw">Glemt <a href="#">password?</a></span>
-				<button type="submit" class="opret-profil-button" id="spring" onClick="showPage(this)">Log ind</button>
-				<span class="opret-profil">Har du ikke en profil? <a href="#">Opret profil</a></span>
-			</div>
+                <h1>Log ind</h1>
+            </div>
+
+            <div class="form">
+                <input type="text" placeholder="E-mail*" name="email" required>
+                <input type="password" placeholder="Password*" name="psw" required>
+                <span class="psw">Glemt <a href="#">password?</a></span>
+                <button type="submit" class="opret-profil-button" id="spring" onClick="showPage(this)">Log ind</button>
+                <span class="opret-profil">Har du ikke en profil? <a href="#">Opret profil</a></span>
+            </div>
         </div>
-        
+
         <div id="forside" class="background_trans">
             <div class="overlayButtonForside" id="nav_mad" onClick="showPage(this)"><i class="fas fa-list"></i></div>
-            <button class="forsideButton" id="nav_mad" onClick="showPage(this)"><p>Fødevarer</p></button>
+            <button class="forsideButton" id="nav_mad" onClick="showPage(this)">
+                <p>Fødevarer</p>
+            </button>
             <div class="overlayButtonForside" id="nav_op" onClick="showPage(this)"><i class="fas fa-utensils"></i></div>
-            <button class="forsideButton" id="nav_op" onClick="showPage(this)"><p>Opskrifter</p></button>
+            <button class="forsideButton" id="nav_op" onClick="showPage(this)">
+                <p>Opskrifter</p>
+            </button>
             <div class="overlayButtonForside" id="nav_pro" onClick="showPage(this)"><i class="fas fa-user"></i></div>
-            <button class="forsideButton" id="nav_pro" onClick="showPage(this)"><p>Profil</p></button>
+            <button class="forsideButton" id="nav_pro" onClick="showPage(this)">
+                <p>Profil</p>
+            </button>
             <div class="overlayButtonForside"><i class="fas fa-share-alt"></i></div>
-            <button class="forsideButton"><p>Del profil</p></button>
+            <button class="forsideButton">
+                <p>Del profil</p>
+            </button>
             <img src="images/1x/DiaLogo.png" alt="Logo Diabetes Foreningen" class="logoDiabetes">
         </div>
 
         <div id="madoversigt" class="background_trans">
             <h2>Fødevareroversigt</h2>
 
-            <button class="accordion" id="mejeri" onclick="accordion_menu(this)">Mejeri</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull
+            <div class="outermenu">
+                <button class="accordion" id="mejeri" onClick="accordion_menu(this)">Mejeri</button>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="maelk" onClick="accordion_menu(this)">Mælk</button>
+                    <div class="panel">Sædmælk er sødt eller saltet, alt efter koncentrationen af ananas.</div>
+                </div>
             </div>
-        </div>    
+
+            <div class="outermenu">
+                <button class="accordion" id="koed" onClick="accordion_menu(this)">Kød</button>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="saelkoed" onClick="accordion_menu(this)">Sælkød</button>
+                    <div class="panel">Smagen af Grønland</div>
+                </div>
+                <div class="innermenu">
+                        <button class="inneraccordion" id="hvalmoed" onClick="accordion_menu(this)">Hvalkød</button>
+                        <div class="panel">Smagen af Finland</div>
+                    </div>
+            </div>
+    
+        </div>
 
         <div id="opskrifter" class="background_trans">
             <br />
@@ -142,8 +173,9 @@
             <div class="noter">
                 <h2>Dine noter</h2>
             </div>
-            
+
         </div>
     </main>
 </body>
+
 </html>
