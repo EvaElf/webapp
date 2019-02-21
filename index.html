@@ -36,6 +36,7 @@
     </nav>
 
     <main>
+        <!-- STARTSIDE ----------------------------------------------------->
         <div id="startside" class="background">
             <div class="startside-logo">
                 <img src="images/logo.svg" alt="logo">
@@ -60,6 +61,7 @@
             </div>
         </div>
 
+        <!-- OPRET BRUGER ----------------------------------------------------->
         <div id="opretbruger" class="background">
             <div class="profile-picture">
                 <img src="images/User.png" alt="profilbillede">
@@ -88,6 +90,7 @@
             </div>
         </div>
 
+        <!-- LOG IND ----------------------------------------------------->
         <div id="logind" class="background">
             <div class="startside-logo">
                 <img src="images/logo.svg" alt="logo">
@@ -106,6 +109,7 @@
             </div>
         </div>
 
+        <!-- FORSIDE ----------------------------------------------------->
         <div id="forside" class="background_trans">
             <div class="overlayButtonForside" id="nav_mad" onClick="showPage(this)"><i class="fas fa-list"></i></div>
             <button class="forsideButton" id="nav_mad" onClick="showPage(this)">
@@ -126,31 +130,626 @@
             <img src="images/1x/DiaLogo.png" alt="Logo Diabetes Foreningen" class="logoDiabetes">
         </div>
 
+        <!-- FØDEVAREROVERSIGT ----------------------------------------------------->
         <div id="madoversigt" class="background_trans">
             <h2>Fødevareroversigt</h2>
 
+            <!-- MEJERI -->
             <div class="outermenu">
                 <button class="accordion" id="mejeri" onClick="accordion_menu(this)">Mejeri</button>
+
                 <div class="innermenu">
                     <button class="inneraccordion" id="maelk" onClick="accordion_menu(this)">Mælk</button>
-                    <div class="panel">Sædmælk er sødt eller saltet, alt efter koncentrationen af ananas.</div>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Fedt</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 0,7g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="syrnedemaelk" onClick="accordion_menu(this)">Syrnede
+                        mælkeprodukter</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Sukkerarter</th>
+                                <th>Fedt</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 6g</td>
+                                <td>&lt; 1,5g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="ost" onClick="accordion_menu(this)">Ost</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Fedt</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 17g (30+)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="smor" onClick="accordion_menu(this)">Smør og margarine</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <p>Hold igen med brug af dette</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="flode" onClick="accordion_menu(this)">Fløde</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <p>Hold igen med brug af dette</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="egg" onClick="accordion_menu(this)">Æg</button>
+                    <div class="panel">
+                        <p>Næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Sukkerarter</th>
+                            </tr>
+                            <tr>
+                                <td>12,3g</td>
+                                <td>9,2g</td>
+                                <td>1,2g</td>
+                                <td>0g</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
 
+            <!-- BRØD -->
+            <div class="outermenu">
+                <button class="accordion" id="brod" onClick="accordion_menu(this)">Brød</button>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="rugbrod" onClick="accordion_menu(this)">Rugbrød og
+                        knækbrød</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Fedt</th>
+                                <th>Sukkerarter</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 7g</td>
+                                <td>&lt; 5g</td>
+                                <td>&gt; 8g</td>
+                            </tr>
+                        </table>
+                        <p>- Rugbrød indeholder mellem 29-36 g stivelse pr. 100g</p>
+                        <p>- Knækbrød indeholder mellem 54–62 g stivelse pr. 100g</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="grovbrod" onClick="accordion_menu(this)">Grovbrød</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Fedt</th>
+                                <th>Sukkerarter</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 7g</td>
+                                <td>&lt; 5g</td>
+                                <td>&gt; 5g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="morgenstykker" onClick="accordion_menu(this)">Morgenstykker og
+                        boller</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Fedt</th>
+                                <th>Sukkerarter</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 7g</td>
+                                <td>&lt; 5g</td>
+                                <td>&gt; 5g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="fastbrod" onClick="accordion_menu(this)">Fastfoodbrød</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Fedt</th>
+                                <th>Sukkerarter</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 7g</td>
+                                <td>&lt; 5g</td>
+                                <td>&gt; 5g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KØD -->
             <div class="outermenu">
                 <button class="accordion" id="koed" onClick="accordion_menu(this)">Kød</button>
                 <div class="innermenu">
-                    <button class="inneraccordion" id="saelkoed" onClick="accordion_menu(this)">Sælkød</button>
-                    <div class="panel">Smagen af Grønland</div>
+                    <button class="inneraccordion" id="koed_under" onClick="accordion_menu(this)">Kød, kødpålæg og
+                        fjerkræ</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Fedt</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 10g</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="innermenu">
-                        <button class="inneraccordion" id="hvalmoed" onClick="accordion_menu(this)">Hvalkød</button>
-                        <div class="panel">Smagen af Finland</div>
+                    <button class="inneraccordion" id="fisk" onClick="accordion_menu(this)">Fisk (uden
+                        panering)</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <p>Afhængig af art. Ingen begrænsninger ift. fedt.</p>
                     </div>
+                </div>
             </div>
-    
+
+            <!-- RIS PASTA GRYN -->
+            <div class="outermenu">
+                <button class="accordion" id="rispasta" onClick="accordion_menu(this)">Ris, pasta og gryn</button>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="ris" onClick="accordion_menu(this)">Ris</button>
+                    <div class="panel">
+                        <p><em>Brune ris,</em> næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>9g</td>
+                                <td>2,9g</td>
+                                <td>71,8g</td>
+                                <td>4,2g</td>
+                            </tr>
+                        </table>
+
+                        <p><em>Hvide parboiled ris,</em> næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>7,8g</td>
+                                <td>1,2g</td>
+                                <td>78,5g</td>
+                                <td>0,9g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="innermenu">
+                    <button class="inneraccordion" id="pasta" onClick="accordion_menu(this)">Pasta</button>
+                    <div class="panel">
+                        <p><em>Fuldkorns pasta,</em> næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>13,1g</td>
+                                <td>2,9g</td>
+                                <td>63,5g</td>
+                                <td>9,6g</td>
+                            </tr>
+                        </table>
+
+                        <p><em>Hvid pasta,</em> næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>12,3g</td>
+                                <td>1,8g</td>
+                                <td>72,4g</td>
+                                <td>3,2g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="innermenu">
+                    <button class="inneraccordion" id="gryn" onClick="accordion_menu(this)">Gryn</button>
+                    <div class="panel">
+                        <p><em>Havregryn,</em> næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>13,3g</td>
+                                <td>6,7g</td>
+                                <td>58g</td>
+                                <td>10,3g</td>
+                            </tr>
+                        </table>
+
+                        <p><em>Byggryn,</em> næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>9,2g</td>
+                                <td>2,4g</td>
+                                <td>67,9g</td>
+                                <td>9,5g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GRØNTSAGER -->
+            <div class="outermenu">
+                <button class="accordion" id="grontsager" onClick="accordion_menu(this)">Grøntsager</button>
+
+                <div class="innermenu">
+                    <button class="inneraccordion" id="agurk" onClick="accordion_menu(this)">Tomat</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FRUGT BÆR -->
+            <div class="outermenu">
+                <button class="accordion" id="frugt" onClick="accordion_menu(this)">Frugt og bær</button>
+
+                <div class="innermenu">
+                    <button class="inneraccordion" id="appelsin" onClick="accordion_menu(this)">Appelsin,
+                        grapefrugt</button>
+                    <div class="panel">
+                        <p>Næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Sukkerarter</th>
+                            </tr>
+                            <tr>
+                                <td>0,9g</td>
+                                <td>0,6g</td>
+                                <td>9,5g</td>
+                                <td>8,3g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="blommer" onClick="accordion_menu(this)">Blommer</button>
+                    <div class="panel">
+                        <p>Næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Sukkerarter</th>
+                            </tr>
+                            <tr>
+                                <td>0,5g</td>
+                                <td>0,3g</td>
+                                <td>10,5g</td>
+                                <td>8,8g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="able" onClick="accordion_menu(this)">Æble, pære</button>
+                    <div class="panel">
+                        <p>Næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Sukkerarter</th>
+                            </tr>
+                            <tr>
+                                <td>0,3g</td>
+                                <td>0,3g</td>
+                                <td>9,3g</td>
+                                <td>10,9g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="banan" onClick="accordion_menu(this)">Banan</button>
+                    <div class="panel">
+                        <p>Næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Sukkerarter</th>
+                            </tr>
+                            <tr>
+                                <td>1,1g</td>
+                                <td>0,2g</td>
+                                <td>21g</td>
+                                <td>15,4g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="jordbar" onClick="accordion_menu(this)">Jordbær, hindbær,
+                        brombær, ribs, stikkelsbær, tyttebær</button>
+                    <div class="panel">
+                        <p>Næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Sukkerarter</th>
+                            </tr>
+                            <tr>
+                                <td>0,7g</td>
+                                <td>0,6g</td>
+                                <td>6,9g</td>
+                                <td>6,1g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="solbar" onClick="accordion_menu(this)">Solbær, blåbær</button>
+                    <div class="panel">
+                        <p>Næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Sukkerarter</th>
+                            </tr>
+                            <tr>
+                                <td>0,7g</td>
+                                <td>0,5g</td>
+                                <td>10,4g</td>
+                                <td>9,5g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DRIKKEVARER -->
+            <div class="outermenu">
+                <button class="accordion" id="drikke" onClick="accordion_menu(this)">Drikkevarer</button>
+
+                <div class="innermenu">
+                    <button class="inneraccordion" id="saft" onClick="accordion_menu(this)">Saft og lemonade</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="saft" onClick="accordion_menu(this)">Sodavand</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="saft" onClick="accordion_menu(this)">Juice</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="saft" onClick="accordion_menu(this)">Kakaomælk</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="saft" onClick="accordion_menu(this)">Smoothies</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="saft" onClick="accordion_menu(this)">Kaffe og te</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALKOHOL -->
+            <div class="outermenu">
+                <button class="accordion" id="alkohol" onClick="accordion_menu(this)">Alkohol</button>
+
+                <div class="innermenu">
+                    <button class="inneraccordion" id="ol" onClick="accordion_menu(this)">Øl</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="vin" onClick="accordion_menu(this)">Vin</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="spiritus" onClick="accordion_menu(this)">Spiritus</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="likor" onClick="accordion_menu(this)">Likør</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SØDEMIDLER -->
+            <div class="outermenu">
+                <button class="accordion" id="sodemidler" onClick="accordion_menu(this)">Sødemidler</button>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="gode" onClick="accordion_menu(this)">Giver ikke
+                        blodsukkerstigning</button>
+                    <div class="panel">
+                        <p>Aspartam (E 951), cyklamat (E 952), thaumatin (E 957), acesulfam K (E 950), neohesperidin (E
+                            959), sakkarin (E 954), sucralose (E 955), erythritol (E 968), steviol glycosid (E 960).</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="gode" onClick="accordion_menu(this)">Giver muligvis
+                        blodsukkerstigning</button>
+                    <div class="panel">
+                        <p>Liste</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SNACKS -->
+            <div class="outermenu">
+                <button class="accordion" id="snacks" onClick="accordion_menu(this)">Snacks, slik og søde sager</button>
+
+                <div class="innermenu">
+                    <button class="inneraccordion" id="chips" onClick="accordion_menu(this)">Chips</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="chokolade" onClick="accordion_menu(this)">Chokolade</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="flodeis" onClick="accordion_menu(this)">Flødeis</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="kage" onClick="accordion_menu(this)">Kage</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="kiks" onClick="accordion_menu(this)">Kiks</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="lakrids" onClick="accordion_menu(this)">Lakrids</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="smakager" onClick="accordion_menu(this)">Småkager</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="snacknodder" onClick="accordion_menu(this)">Snacknødder</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="sodavandis" onClick="accordion_menu(this)">Sodavands is</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+                <div class="innermenu">
+                    <button class="inneraccordion" id="vingummi" onClick="accordion_menu(this)">Vingummi</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
 
+        <!-- OPSKRIFTER ----------------------------------------------------->
         <div id="opskrifter" class="background_trans">
             <br />
             <br />
@@ -161,6 +760,7 @@
             <br />
         </div>
 
+        <!-- PROFIL ----------------------------------------------------->
         <div id="profil" class="background_trans">
             <div class="profile-picture">
                 <img src="images/User.png" alt="profilbillede">
