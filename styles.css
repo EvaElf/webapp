@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html, body, main {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -14,6 +14,10 @@ html, body {
     color: white;
     height: 5vh;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #topbar ul {
@@ -41,6 +45,7 @@ nav {
     bottom: 0;
     background-color: #7A030D;
     padding: 0;
+	z-index: 100;
 }
 
 nav ul {
@@ -57,7 +62,7 @@ nav ul li {
     margin: 0 -2px;
 }
 
-nav ul li a { 
+nav ul li a {
     text-decoration: none;
     color: white;
 }
@@ -84,10 +89,57 @@ nav i {
 }
 
 
+#opretbruger, #logind, #forside, #madoversigt, #opskrifter, #profil, #topbar, #nav {
+    display: none;
+}
+
+/* ---- STARTSIDE ----------------------------------------------*/
+.startside-logo {
+	width: 100vw;
+}
+
+.startside-logo img {
+	width: 25vw;
+	margin: 0 auto;
+	padding: 18vh 0 0vh 0;
+	display: block;
+}
+
+.welcome, .spring-over {
+	color: white;
+	text-align: center;
+}
+
+.welcome p {
+	font-size: 25px;
+}
+
+.spring-over p {
+	font-size: 25px;
+	text-decoration-line: underline;
+}
+
+.startside-button {
+	width: 70vw;
+	margin: 2vh auto;
+	font-size: 20px;
+}
+
+.diabeteslogo img {
+	float: right;
+	position: absolute;
+	bottom: 2vh;
+	right: 2vw;
+}
+	
+
+
 /* ---- OPRET BRUGER ----------------------------------------------*/
 .profile-picture img {
 	width: 30vw;
-	margin: 5vh 37vw; 
+	display: block;
+	margin: 0 auto;
+	padding: 6vh 0 6vh 0;
 }
 
 .form {
@@ -110,6 +162,10 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
+.checkbox-text, .checkbox-text a {
+	color: white;
+}
+
 button {
 	background-color: #BA0816;
     color: white;
@@ -120,3 +176,221 @@ button {
 	border: none;
 	border-radius: 10px;
 }
+
+<<<<<<< HEAD
+
+/* ---- Opskrifter ----------------------------------------------*/
+
+#opskrifttitle{
+	margin: 0;
+	padding-top: 7vh;
+	padding-bottom: 0;
+	font-size: 28px;
+	text-align: center;
+}
+
+.recipeposibilities{
+	margin: 7vh 3vw 1vh;
+	background-color: rgba(255,255,255, 0.3);
+	padding: 1vh 0 1vh 1vw;
+}
+
+.recipe{
+	width: 28vw;
+	margin: 0vh 1vw 2vh 3vw;
+	background-color: #EFEAEA;
+	display: inline-block;
+}
+
+.recipepic{
+	width: 28vw;
+	margin: 0;
+	min-height: 8vh;
+}
+
+.smalltitlerecipe{
+	word-break:break-all;
+	padding: 0 1vw;
+	display: inline-block;
+	height: 15vh;
+	font-size: 16px;
+}
+
+.icons{
+	padding: 0vh 2vw;
+	font-size: 13px;
+	height: 8vh;
+}
+
+
+.fa-ellipsis-h{
+	font-size: 20px;
+	margin: 0 3vw;
+	display: inline-block;	
+}
+
+.fa-angle-right{
+	font-size: 30px;
+	float: right;
+	margin: 0 5vw;
+	display: inline-block;
+}
+
+.fa-sliders-h{
+	font-size: 30px;
+	float: right;
+	margin: 0 1vw;
+	display: inline-block;
+}
+
+.foodcontainer{
+	transform: translateY(6vh);
+	width: 100vw;
+	z-index: 1;
+	padding: 2vh 0;
+	background-color: rgba(255,255,255, 0.3);
+}
+
+
+
+=======
+.har-en-profil {
+	color: black;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	background-color: white;
+	width: 70vw;
+	margin: 5vh auto;
+	opacity: 0.8;
+	padding: 1vh;
+}
+
+.har-en-profil a {
+	color: black;
+}
+
+/* ---- FORSIDE ----------------------------------------------*/
+
+
+.forsideButton{
+    width: 90vw;
+    height: 10vh;
+    margin: -2vh auto;
+    font-size: 24px;
+}
+
+.forsideButton p{
+    text-align: left;
+    margin-left: 18vw;
+    margin-top: 1vh;
+}
+
+.overlayButtonForside{
+    background-color: #7A030D;
+    max-width: 24vw;
+    height: 10vh;
+    transform: translateX(5vw) translateY(8vh);
+    border-radius: 10px 0 0 10px;
+}
+
+.overlayButtonForside i{
+    font-size: 24px;
+    color: #ffffff;
+    transform: translateX(10vw) translateY(3vh);
+}
+
+.logoDiabetes{
+    float: right;
+	position: absolute;
+	bottom: 12vh;
+	right: 2vw;
+}
+
+
+/* ---- LOG IND ----------------------------------------------*/
+.logind h1 {
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding: 4vh 0 5vh 0;
+}
+
+.psw, .psw a {
+	color: white;
+	font-size: 18px;
+}
+
+.opret-profil {
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+}
+
+.opret-profil a {
+	color: white;
+}
+
+.opret-profil-button {
+	width: 45vw;
+	font-size: 20px;
+}
+
+
+/* --- MADOVERSIGT -------------------*/
+#madoversigt h2 {
+    margin: 0 auto;
+    padding: 2vh 0 0;
+    text-align: center;
+}
+
+
+button.accordion {
+    width: 90vw;
+    background-color: gray;
+    text-align: left;
+    outline: none; 
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.innermenu {
+    display: none;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+} 
+
+
+/* --- PROFIL ---------------------*/
+#profil img {
+    margin-bottom: 0px;
+}
+
+#navn {
+    text-align: center;
+}
+
+#navn p {
+    display: inline-block;
+    margin: 0;
+}
+
+.noter {
+    width: 90vw;
+    margin: 0 auto;
+}
+>>>>>>> b0a1a5ea355a910fb4aa8c17adf3ee0c53281552
