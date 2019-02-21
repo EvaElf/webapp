@@ -16,7 +16,7 @@
     <header>
         <div id="topbar">
             <ul>
-                <li>logo/navn</li>
+                <li><img id="toplogo" src="images/logo.svg" alt="the logo"></li>
                 <li id="search"><i class="fas fa-search"></i></li>
             </ul>
         </div>
@@ -66,6 +66,7 @@
             <div class="profile-picture">
                 <img src="images/User.png" alt="profilbillede">
             </div>
+		
 
             <div class="form">
                 <input type="text" placeholder="Fornavn*" name="name" required>
@@ -79,7 +80,7 @@
                 <input type="password" placeholder="Bekræft password*" name="psw-repeat" required>
 
                 <input type="checkbox" name="acceptere betingelser">
-                <span class="checkbox-text">Accepter betingelser*<a href="#">Læs mere</a></span>
+                <span class="checkbox-text" required>Accepter betingelser* <a href="#">Læs mere</a></span>
 
                 <button type="submit" class="opret-profil-button spring" id="spring" onClick="showPage(this)">Opret
                     profil</button>
@@ -99,7 +100,7 @@
             <div class="logind">
                 <h1>Log ind</h1>
             </div>
-
+			
             <div class="form">
                 <input type="text" placeholder="E-mail*" name="email" required>
                 <input type="password" placeholder="Password*" name="psw" required>
@@ -751,16 +752,134 @@
 
         <!-- OPSKRIFTER ----------------------------------------------------->
         <div id="opskrifter" class="background_trans">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            opskrifter
-            <br />
+            <h2 id="opskrifttitle">Opskrifter</h2>
+			<h3 class="recipeposibilities">Morgenmad<i class="fas fa-angle-right"></i><i class="fas fa-sliders-h"></i><i class="fas fa-ellipsis-h"></i></h3> 
+			
+			
+			<div class="foodcontainer">
+				<div class="recipe">
+					<img class="recipepic" src="images/pancakes.jpg" alt="A picture of the pancake-recipe">
+					<h4 class="smalltitlerecipe">Brunchpandekager med havre</h4>
+					<p class="icons"><i class="fas fa-users"></i> 14 stk</p>
+					<br />
+				</div>
+				<div class="recipe">
+					<img class="recipepic" src="images/oatmeal.jpg" alt="A picture of the oatmeal-recipe">
+					<h4 class="smalltitlerecipe">Morgengrød</h4>
+					<p class="icons"><i class="fas fa-user-alt"></i> 1 stk</p>
+					<br />
+				</div>
+				<div class="recipe">
+					<img class="recipepic" src="images/musligroedmedrabarberkompot.jpg" alt="A picture of the musligroed-recipe">
+					<h4 class="smalltitlerecipe">Müsligrød med rabarberkompot</h4>
+					<p class="icons"><i class="fas fa-users"></i> 4 stk</p>
+					<br />
+				</div>
+			</div>
+
+				<h3 class="recipeposibilities">Middag<i class="fas fa-angle-right"></i> <i class="fas fa-sliders-h"></i><i class="fas fa-ellipsis-h"></i></h3>
+
+			<div class="foodcontainer">
+				<div class="recipe">
+					<img class="recipepic" src="images/ryebuns.jpg" alt="A picture of ryebuns with chocolate">
+					<h4 class="smalltitlerecipe">Rugboller med chokolade</h4>
+					<p class="icons"><i class="fas fa-users"></i> 20 stk</p>
+					<br />
+				</div>
+				
+				<div class="recipe">
+					<img class="recipepic" src="images/carrot-paté.jpg" alt="A picture of the carrot-paté">
+					<h4 class="smalltitlerecipe">Gulerodspaté med bacon</h4>
+					<p class="icons"><i class="fas fa-user-alt"></i> 6 stk. 
+					<br />
+					<i class="fas fa-clock"></i> 75 min.
+					</p>
+					<br />
+				</div>
+				<div class="recipe">
+					<img class="recipepic" src="images/calesalatwithwheatandsalmon.jpg" alt="A picture of the calesalatrecipe">
+					<h4 class="smalltitlerecipe">Kålsalat med korn og laks</h4>
+					<p class="icons"><i class="fas fa-user-alt"></i> 1 stk</p>
+					<br />
+				</div>
+			</div>
+
+			<h3 class="recipeposibilities">Aftensmad<i class="fas fa-angle-right"></i><i class="fas fa-sliders-h"></i><i class="fas fa-ellipsis-h"></i></h3>
+				<div class="foodcontainer">
+				<div class="recipe">
+					<img class="recipepic" src="images/soup.jpg" alt="A picture of soup">
+					<h4 class="smalltitlerecipe">Kartoffelporresuppe</h4>
+					<p class="icons"><i class="fas fa-users"></i> 16 stk</p>
+					<br />
+				</div>
+				<div class="recipe">
+					<img class="recipepic" src="images/millionbeef.jpg" alt="A picture of million beef">
+					<h4 class="smalltitlerecipe">Millionbøf med rodfrugter</h4>
+					<p class="icons"><i class="fas fa-users"></i> 4 stk</p>
+					<br />
+				</div>
+				<div class="recipe">
+					<img class="recipepic" src="images/sushi.jpg" alt="A picture of sushi">
+					<h4 class="smalltitlerecipe">Sushi med tigerrejer</h4>
+					<p class="icons"><i class="fas fa-users"></i> 8 stk</p>
+					<br />
+				</div>
+			</div>
+				<h3 class="recipeposibilities">Mellemmåltider<i class="fas fa-angle-right"></i><i class="fas fa-sliders-h"></i><i class="fas fa-ellipsis-h"></i></h3>
+				<div class="foodcontainer">
+					<div class="recipe">
+						<img class="recipepic" src="images/smallpiecesbread.jpg" alt="A picture of bread with birkes">
+						<h4 class="smalltitlerecipe">Birkes-knækbrød</h4>
+						<p class="icons"><i class="fas fa-users"></i> 20 stk <br />
+						<i class="fas fa-concierge-bell"></i> Glutenfrit</p>
+						<br />
+					</div>
+					<div class="recipe">
+						<img class="recipepic" src="images/raisinstick.jpg" alt="A picture of raisinsticks">
+						<h4 class="smalltitlerecipe">Rosinstænger</h4>
+						<p class="icons"><i class="fas fa-users"></i> 14 stk</p>
+						<br />
+				</div>
+					<div class="recipe">
+						<img class="recipepic" src="images/snackballs.jpg" alt="A picture of snackballs">
+						<h4 class="smalltitlerecipe">Snackkugler</h4>
+						<p class="icons"><i class="fas fa-users"></i> 30 stk</p>
+						<br />
+					</div>
+			</div>
+
+				<h3 class="recipeposibilities">Desserter<i class="fas fa-angle-right"></i><i class="fas fa-sliders-h"></i><i class="fas fa-ellipsis-h"></i></h3>
+				<div class="foodcontainer">
+					<div class="recipe">
+					<img class="recipepic" src="images/abrikoscake.gif" alt="A picture of the abricot-cake">
+					<h4 class="smalltitlerecipe">Abrikoslagkage</h4>
+					<p class="icons"><i class="fas fa-user-alt"></i> 8 stk. 
+					<br />
+					<i class="fas fa-clock"></i> 75 min.
+					</p>
+					<br />
+				</div>
+					<div class="recipe">
+						<img class="recipepic" src="images/dessertpizza.jpg" alt="A picture of Dessertpizzas">
+						<h4 class="smalltitlerecipe">Dessertpizza</h4>
+						<p class="icons"><i class="fas fa-users"></i> 10 stk</p>
+						<br />
+					</div>
+					<div class="recipe">
+						<img class="recipepic" src="images/fruitspear.jpg" alt="A picture of fruitspears">
+						<h4 class="smalltitlerecipe">Frugt på spyd</h4>
+						<p class="icons"><i class="fas fa-users"></i> 4 stk</p>
+						<br />
+				</div>
+					<br />
+					<br />
+					<br />
+					<br />
+			</div>
         </div>
 
         <!-- PROFIL ----------------------------------------------------->
+
         <div id="profil" class="background_trans">
             <div class="profile-picture">
                 <img src="images/User.png" alt="profilbillede">

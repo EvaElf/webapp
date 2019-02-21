@@ -12,12 +12,13 @@ html, body, main {
 #topbar {
     background-color: #7A030D;
     color: white;
-    height: 5vh;
+    height: 10vh;
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+	z-index: 100;
 }
 
 #topbar ul {
@@ -35,8 +36,15 @@ html, body, main {
 
 #search i {
     position: absolute;
-    top: 10px;
+    top: 16px;
     right: 10vw;
+	font-size: 5vh;
+}
+
+#toplogo{
+	z-index: 110;
+	height: 9vh;
+	margin: 0.5vh 0 1vh;
 }
 
 nav {
@@ -45,6 +53,7 @@ nav {
     bottom: 0;
     background-color: #7A030D;
     padding: 0;
+	z-index: 100;
 }
 
 nav ul {
@@ -74,16 +83,16 @@ nav i {
     background-image: url(images/background.jpg);
     background-position: center;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+  	background-repeat: no-repeat;
+	background-attachment: fixed; 
 }
 
 .background_trans {
     background-image: url(images/background_trans.png);
     background-position: center;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
 }
 
 #opretbruger, #logind, #forside, #madoversigt, #opskrifter, #profil, #topbar, #nav {
@@ -91,6 +100,11 @@ nav i {
 }
 
 /* ---- STARTSIDE ----------------------------------------------*/
+#startside{
+	min-height: 100vh;
+	overflow-y: hidden;
+}
+
 .startside-logo {
 	width: 100vw;
 }
@@ -119,7 +133,7 @@ nav i {
 .startside-button {
 	width: 70vw;
 	margin: 2vh auto;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .diabeteslogo img {
@@ -132,6 +146,11 @@ nav i {
 
 
 /* ---- OPRET BRUGER ----------------------------------------------*/
+#opretbruger{
+	min-height: 100vh;
+	overflow-y: hidden;
+}
+
 .profile-picture img {
 	width: 30vw;
 	display: block;
@@ -190,12 +209,97 @@ button {
 	color: black;
 }
 
+
+
+/* ---- Opskrifter ----------------------------------------------*/
+
+#opskrifttitle{
+	margin: 0;
+	padding-top: 12vh;
+	padding-bottom: 0;
+	font-size: 28px;
+	text-align: center;
+	background-color: rgba(255,255,255, 0.3);
+}
+
+.recipeposibilities{
+	margin: 7vh 3vw 1vh;
+	background-color: rgba(255,255,255, 0.3);
+	padding: 1vh 0 1vh 1vw;
+}
+
+.recipe{
+	width: 28vw;
+	margin: 0vh 1vw 2vh 3vw;
+	background-color: #EFEAEA;
+	display: inline-block;
+}
+
+.recipepic{
+	width: 28vw;
+	margin: 0;
+	min-height: 8vh;
+}
+
+.smalltitlerecipe{
+	word-break:break-all;
+	padding: 0 1vw;
+	display: inline-block;
+	height: 15vh;
+	font-size: 16px;
+}
+
+.icons{
+	padding: 0vh 2vw;
+	font-size: 13px;
+	height: 8vh;
+}
+
+
+.fa-ellipsis-h{
+	font-size: 20px;
+	margin: 0 3vw;
+	display: inline-block;	
+}
+
+.fa-angle-right{
+	font-size: 30px;
+	float: right;
+	margin: 0 5vw;
+	display: inline-block;
+}
+
+.fa-sliders-h{
+	font-size: 30px;
+	float: right;
+	margin: 0 1vw;
+	display: inline-block;
+}
+
+.foodcontainer{
+	transform: translateY(6vh);
+	width: 100vw;
+	z-index: 1;
+	padding: 2vh 0;
+	background-color: rgba(255,255,255, 0.3);
+}
+
+
+
+
 /* ---- FORSIDE ----------------------------------------------*/
+
+#forside{
+	margin-top: 10vh;
+	min-height: 100vh;
+}
+
 .forsideButton{
     width: 90vw;
     height: 10vh;
     margin: -2vh auto;
     font-size: 24px;
+	
 }
 
 .forsideButton p{
@@ -221,12 +325,18 @@ button {
 .logoDiabetes{
     float: right;
 	position: absolute;
-	bottom: 12vh;
+	bottom: 14vh;
 	right: 2vw;
 }
 
 
+
 /* ---- LOG IND ----------------------------------------------*/
+#logind{
+	height: 110vh;
+	overflow-y: hidden;
+}
+
 .logind h1 {
 	color: white;
 	text-align: center;
@@ -240,23 +350,29 @@ button {
 }
 
 .opret-profil {
-	color: white;
+	color: #4C4C4C;
+	background-color: white;
+	opacity: 0.8;
 	display: block;
 	text-align: center;
 	font-size: 20px;
 }
 
 .opret-profil a {
-	color: white;
+	color: #4C4C4C;
 }
 
 .opret-profil-button {
 	width: 45vw;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 
 /* --- MADOVERSIGT -------------------*/
+#madoversigt{
+	min-height: 100vh;
+}
+
 #madoversigt h2 {
     margin: 0 auto;
     padding: 2vh 0 0;
@@ -325,8 +441,13 @@ th, td, tr {
 
 
 /* --- PROFIL ---------------------*/
+#profil{
+	min-height: 100vh;
+}
+
 #profil img {
-    margin-bottom: 0px;
+    margin-bottom: 0;
+	margin-top: 10vh;
 }
 
 #navn {
@@ -341,4 +462,3 @@ th, td, tr {
 .noter {
     width: 90vw;
     margin: 0 auto;
-}
