@@ -103,7 +103,8 @@ nav i {
 
 /* ---- STARTSIDE ----------------------------------------------*/
 #startside{
-	height: 100vh;
+	min-height: 100vh;
+	overflow-y: hidden;
 }
 
 .startside-logo {
@@ -148,7 +149,8 @@ nav i {
 
 /* ---- OPRET BRUGER ----------------------------------------------*/
 #opretbruger{
-	height: 100vh;
+	min-height: 100vh;
+	overflow-y: hidden;
 }
 
 .profile-picture img {
@@ -208,6 +210,7 @@ button {
 .har-en-profil a {
 	color: black;
 }
+
 
 
 /* ---- Opskrifter ----------------------------------------------*/
@@ -290,7 +293,7 @@ button {
 
 #forside{
 	margin-top: 10vh;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .forsideButton{
@@ -324,14 +327,16 @@ button {
 .logoDiabetes{
     float: right;
 	position: absolute;
-	bottom: 12vh;
+	bottom: 14vh;
 	right: 2vw;
 }
 
 
+
 /* ---- LOG IND ----------------------------------------------*/
 #logind{
-	height: 100vh;
+	height: 110vh;
+	overflow-y: hidden;
 }
 
 .logind h1 {
@@ -367,7 +372,7 @@ button {
 
 /* --- MADOVERSIGT -------------------*/
 #madoversigt{
-	height: 100vh;
+	min-height: 100vh;
 }
 
 #madoversigt h2 {
@@ -406,7 +411,7 @@ button.accordion {
 
 /* --- PROFIL ---------------------*/
 #profil{
-	height: 100vh;
+	min-height: 100vh;
 }
 
 #profil img {
