@@ -28,11 +28,6 @@ function accordion_menu(point) {
 }
 
 function showPage(page) {
-    // let forside = document.getElementById('forside');
-    // let madoversigt = document.getElementById('madoversigt');
-    // let opskrifter = document.getElementById('opskrifter');
-    // let profil = document.getElementById('profil');
-
     let all_pages = document.getElementsByClassName('nav_item');
 
     for(let i = 0; i < all_pages.length; i++) {
@@ -78,5 +73,3 @@ function showPage(page) {
     }
 
 }
-
-

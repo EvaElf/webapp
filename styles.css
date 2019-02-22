@@ -277,11 +277,9 @@ button {
 }
 
 .foodcontainer{
-	transform: translateY(6vh);
 	width: 100vw;
 	z-index: 1;
 	padding: 2vh 0;
-	background-color: rgba(255,255,255, 0.3);
 }
 
 
@@ -375,7 +373,7 @@ button {
 
 #madoversigt h2 {
     margin: 0 auto;
-    padding: 2vh 0 0;
+    padding: 12vh 0 0;
     text-align: center;
 }
 
@@ -390,7 +388,9 @@ button.accordion {
 }
 
 button.accordion::after {
-    font-family: "Font Awesome 5 Free"; font-weight: 600; content: "\f078";
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 600; 
+	content: "\f078";
     float: right;
 }
 
@@ -404,12 +404,16 @@ button.inneraccordion {
 }
 
 button.inneraccordion::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 600; content: "\f067";
-    padding: 0 5vw 0 0px
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 600; 
+	content: "\f067";
+    padding: 0 5vw 0 0px;
 }
 
 button.inneraccordion::after {
-    font-family: "Font Awesome 5 Free"; font-weight: 600; content: "\f078";
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 600; 
+	content: "\f078";
     float: right;
 }
 
@@ -447,7 +451,8 @@ th, td, tr {
 
 #profil img {
     margin-bottom: 0;
-	margin-top: 10vh;
+	margin-top: 5vh;
+	padding: 6vh 0 2vh 0;
 }
 
 #navn {
@@ -459,6 +464,35 @@ th, td, tr {
     margin: 0;
 }
 
-.noter {
+.noter, .deltmed {
     width: 90vw;
     margin: 0 auto;
+}
+
+.display {
+	display: block;
+}
+
+.non-display {
+	display: none;
+}
+
+input[type=text].kommentarfelt {
+	width: 100%;
+	margin: 4vh 0 1vh 0;
+}
+
+.fjern {
+	color: blue;
+	text-decoration: underline;
+	margin-top: 0;
+	text-align: right;
+}
+
+.noter h2::after {
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 600; 
+	content: "\f067";
+	float: right;
+	padding: 5px;
+}

@@ -882,7 +882,7 @@
 
         <div id="profil" class="background_trans">
             <div class="profile-picture">
-                <img src="images/User.png" alt="profilbillede">
+                <img src="images/kaj.png" alt="profilbillede">
             </div>
             <div id="navn">
                 <p>Kaj Hansen</p>
@@ -891,8 +891,143 @@
 
             <div class="noter">
                 <h2>Dine noter</h2>
+                <div class="innermenu display">
+                    <button class="inneraccordion" id="grovbrod" onClick="accordion_menu(this)">Grovbrød</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Fedt</th>
+                                <th>Sukkerarter</th>
+                                <th>Kostfibre</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 7g</td>
+                                <td>&lt; 5g</td>
+                                <td>&gt; 5g</td>
+                            </tr>
+                        </table>
+                        <div class="kommentar">
+                            <form action="">
+                                <input type="text" placeholder="Skriv en kommentar..." name="kommentar" class="kommentarfelt">
+                            </form>
+                            <p class="fjern">Fjern note</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="innermenu display">
+                    <button class="inneraccordion" id="koed_under" onClick="accordion_menu(this)">Kød, kødpålæg og
+                        fjerkræ</button>
+                    <div class="panel">
+                        <p>Anbefalede værdier pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Fedt</th>
+                            </tr>
+                            <tr>
+                                <td>&lt; 10g</td>
+                            </tr>
+                        </table>
+                        <div class="kommentar">
+                            <form action="">
+                                <input type="text" placeholder="Skriv en kommentar..." name="kommentar" class="kommentarfelt">
+                            </form>
+                            <p><em>Hakkebøffer og bagte rodfrugter fungerer super godt for mig</em></p>
+                            <p class="fjern">Fjern note</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innermenu display">
+                    <button class="inneraccordion" id="jordbar" onClick="accordion_menu(this)">Jordbær, hindbær,
+                        brombær, ribs, stikkelsbær, tyttebær</button>
+                    <div class="panel">
+                        <p>Næringsindhold pr. 100g:</p>
+                        <table>
+                            <tr>
+                                <th>Protein</th>
+                                <th>Fedt</th>
+                                <th>Kulhydrat</th>
+                                <th>Sukkerarter</th>
+                            </tr>
+                            <tr>
+                                <td>0,7g</td>
+                                <td>0,6g</td>
+                                <td>6,9g</td>
+                                <td>6,1g</td>
+                            </tr>
+                        </table>
+                        <div class="kommentar">
+                            <form action="">
+                                <input type="text" placeholder="Skriv en kommentar..." name="kommentar" class="kommentarfelt">
+                            </form>
+                            <p><em>Jordbær er sundere end blåbær</em></p>
+                            <p class="fjern">Fjern note</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <div class="deltmed">
+                <h2>Du har delt din profil med:</h2>
+
+                <div class="outermenu">
+                    <button class="accordion" id="lone" onClick="accordion_menu(this)">Lone Hansen</button>
+    
+                    <div class="innermenu">
+                        <button class="inneraccordion" id="appelsin" onClick="accordion_menu(this)">Appelsin,
+                            grapefrugt</button>
+                        <div class="panel">
+                            <p>Næringsindhold pr. 100g:</p>
+                            <table>
+                                <tr>
+                                    <th>Protein</th>
+                                    <th>Fedt</th>
+                                    <th>Kulhydrat</th>
+                                    <th>Sukkerarter</th>
+                                </tr>
+                                <tr>
+                                    <td>0,9g</td>
+                                    <td>0,6g</td>
+                                    <td>9,5g</td>
+                                    <td>8,3g</td>
+                                </tr>
+                            </table>
+                            <p><em>Grapefrugt påvirker Kaj's medicin</em></p>
+                        </div>
+                    </div>
+
+                    <div class="innermenu">
+                        <button class="inneraccordion" id="gode" onClick="accordion_menu(this)">Giver ikke
+                            blodsukkerstigning</button>
+                        <div class="panel">
+                            <p>Aspartam (E 951), cyklamat (E 952), thaumatin (E 957), acesulfam K (E 950), neohesperidin (E
+                                959), sakkarin (E 954), sucralose (E 955), erythritol (E 968), steviol glycosid (E 960).</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="outermenu">
+                        <button class="accordion" id="lone" onClick="accordion_menu(this)">Aksel</button>
+                </div>
+
+                <div class="outermenu">
+                        <button class="accordion" id="lone" onClick="accordion_menu(this)">Anna</button>
+                </div>
+            </div>
+
+
+            <div class="overlayButtonForside"><i class="fas fa-share-alt"></i></div>
+            <button class="forsideButton">
+                <p>Del profil</p>
+            </button>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </main>
 </body>
