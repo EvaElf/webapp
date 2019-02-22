@@ -277,11 +277,9 @@ button {
 }
 
 .foodcontainer{
-	transform: translateY(6vh);
 	width: 100vw;
 	z-index: 1;
 	padding: 2vh 0;
-	background-color: rgba(255,255,255, 0.3);
 }
 
 
