@@ -449,7 +449,7 @@ th, td, tr {
 	min-height: 100vh;
 }
 
-#profil img {
+img#kaj {
     margin-bottom: 0;
 	margin-top: 5vh;
 	padding: 6vh 0 2vh 0;
@@ -495,4 +495,46 @@ input[type=text].kommentarfelt {
 	content: "\f067";
 	float: right;
 	padding: 5px;
+}
+
+button#lone.accordion, button#aksel.accordion, button#anna.accordion {
+	padding: 2vh 12vw 2vh 5vw;
+	line-height: 2;
+}
+
+
+button#lone.accordion::before {
+	background-image: url(images/lone.jpg);
+	background-size: 30px 30px;
+	border-radius: 100%;
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+	content: "";
+	margin: 0 5vw 0 0;
+	float: left;
+}
+
+button#aksel.accordion::before {
+	background-image: url(images/aksel.jpg);
+	background-size: 30px 30px;
+	border-radius: 100%;
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+	content: "";
+	margin: 0 5vw 0 0;
+	float: left;
+}
+
+button#anna.accordion::before {
+	background-image: url(images/anna.jpg);
+	background-size: 30px 30px;
+	border-radius: 100%;
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+	content: "";
+	margin: 0 5vw 0 0;
+	float: left;
 }
